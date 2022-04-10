@@ -1,26 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header/>
+  <router-view class=content>
+
+  </router-view>
+  <Footer/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./components/Header.vue"
+import Footer from "./components/Footer.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Footer
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600');
+
+body,html,#app{
+    margin:0;
+    padding:0;
+    min-height:100%;
+    width:100%;
+
+}
+
+.content{
+  font-family:'-apple-system','BlinkMacSystemFont',"Segoe UI",'Roboto',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", 'SFMono-Regular','Menlo,Monaco','Consolas',"Liberation Mono","Courier New",monospace;
+  font-size:18px;
+  line-height: 1.6em;
+  height: 80vh;
 }
 </style>
