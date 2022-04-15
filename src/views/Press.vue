@@ -25,6 +25,7 @@ export default {
     width:1000px;
     margin-left:auto;
     margin-right: auto;
+    display:block;
 } .MainTitle{
         font-family:'Raleway', sans-serif;
         font-size: 32px;
