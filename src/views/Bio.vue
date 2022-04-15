@@ -3,7 +3,7 @@
       <!-- <div class="wrapper"> -->
             <h2>Short Bio</h2>
             <p>Shree K. Nayar is the T. C. Chang Professor of Computer Science at Columbia University. He heads the
-                Columbia Vision Laboratory (<a href="https://www.cs.columbia.edu/CAVE/">CAVE</a>), which develops computational imaging and computer vision systems. His
+                Columbia Vision Laboratory (<a class=list-element href="https://www.cs.columbia.edu/CAVE/">CAVE</a>), which develops computational imaging and computer vision systems. His
                 research is focused on three areas - the creation of novel cameras that provide new forms of visual
                 information, the design of physics-based models for vision and graphics, and the development of
                 algorithms for understanding scenes from images. His work is motivated by applications in the fields of

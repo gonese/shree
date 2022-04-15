@@ -19,7 +19,7 @@ export default {
 /* ul */
 .Footer{
     bottom:0;
-    min-width:100%;
+    min-width:1600px;
     height: 85px;
     background-color:#000000;
 }

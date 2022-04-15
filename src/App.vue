@@ -1,9 +1,11 @@
 <template>
+  <div id=app> 
   <Header/>
   <router-view class=content>
 
   </router-view>
   <Footer/>
+</div>
 </template>
 
 <script>
@@ -25,14 +27,16 @@ body,html,#app{
     margin:0;
     padding:0;
     min-height:100%;
-    width:100%;
+    width:1600px;
 
 }
 
 .content{
   font-family:'-apple-system','BlinkMacSystemFont',"Segoe UI",'Roboto',"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji", 'SFMono-Regular','Menlo,Monaco','Consolas',"Liberation Mono","Courier New",monospace;
   font-size:18px;
+  width:1600px;
   line-height: 1.6em;
-  height: 80vh;
+  height: 100vh;
+
 }
 </style>

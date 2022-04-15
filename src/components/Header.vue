@@ -20,9 +20,9 @@ export default {
 <style scoped>
     .head{
         background-color: rgb(0, 0, 0);
-        height:70px;
+        height:100px;
         text-align: left;
-        min-width:100%;
+        min-width:1600px;
         position: relative;
     }
     .wrapper{
@@ -31,12 +31,13 @@ export default {
     }
     .logo{
         padding-left: 5%;
+        padding-top: 25px;
         width:70px;
         height: 70px;
     }
     .title{
         position:absolute;
-        bottom:0;
+        bottom:12px;
         text-decoration: none;
         font-size:43px;
         font-weight: 600;

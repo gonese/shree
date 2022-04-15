@@ -36,6 +36,10 @@ export default {
     .info{
         margin-top:0;
     }
+    .url{
+        color:black;
+        text-decoration: none;
+    }
     .url:hover{
         color:rgba(103, 103, 104, 0.842)
     } 

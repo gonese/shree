@@ -1,9 +1,8 @@
 <template>
 <div class="container">
-    <!-- <div class=wrapper> -->
         <div class=intro >
             <p class=p>Shree K. Nayar is the T. C. Chang Professor of Computer Science at Columbia University.
-            He heads the Columbia Vision Laboratory (<a href="https://www.cs.columbia.edu/CAVE/" class="text-index-url">CAVE</a>), which develops computational imaging and computer
+            He heads the Columbia Vision Laboratory (<a href="https://www.cs.columbia.edu/CAVE/" class="list-element">CAVE</a>), which develops computational imaging and computer
             vision systems. His research is focused on three areas - the creation of novel cameras that provide
             new forms of visual information, the design of physics-based models for vision and graphics, and
             the development of algorithms for understanding scenes from images. His work is motivated by
@@ -21,7 +20,6 @@
             </ul>
             </div>
             <img class=image src="http://www.cs.columbia.edu/~nayar/assets/shree.jpg">
-    <!-- </div> -->
 </div>
 </template>
 
@@ -33,19 +31,22 @@ export default {
 
 <style>
 .container{
-    width:1000px;
+    width:1200px;
     margin:auto;
+    height:fit-content;
     align-content: center;
     padding-top: 3%;
     padding-bottom:1%;
+    display:flex;
 }
 .image{
-    float:right;
+    /* float:right; */
+    padding-left:50px;
     width:428px;
     height: 537px;
 }
 .intro{
-    float:left;
+    /* float:left; */
     padding-left: auto;
     margin-top:0;
     width:500px;
@@ -64,7 +65,7 @@ export default {
     font-weight: bold;
 }
 .list-element{
-    /* color:black; */
+    color:black;
     text-decoration: none;
     
 }
