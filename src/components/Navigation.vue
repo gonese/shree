@@ -6,9 +6,12 @@
             :key="url.id" 
             :ref="'nav-item_' + url.id"
             >
-                <router-link      @click="sliderIndicator(url.id)" :to=url.link  class="nav-item-url" :class="url.id === selectedIndex?'active':null">
+                <router-link v-if="!url.external"   :to=url.link  class="nav-item-url" :class="url.id === selectedIndex?'active':null">
                     {{url.text}}
                 </router-link>
+                <a v-else :href="url.link" class="nav-item-url" :class="url.id === selectedIndex?'active':null">
+                       {{url.text}}
+                </a>
             </li>
         </ul>
     </div>
@@ -28,13 +31,13 @@ export default {
                 id:1,text:'Home',link:'/'
             },
             {
-                id:2,text:'Biography',link:'/bio'
+                id:2,text:'CAVE',link:'https://cave.cs.columbia.edu/',external:1
             },
             {
-                id:3,text:'Curriculum Vitae',link:'/cv'
+                id:3,text:'Cave Pub',link:'https://cave.cs.columbia.edu/#/publications',external:1
             },
             {
-                id:4,text:'Press',link:'/press'
+                id:4,text:'FPCV',link:'https://fpcv.cs.columbia.edu/',external:1
             },
             {
                 id:5,text:'Contact',link:'/contact'
@@ -48,21 +51,12 @@ export default {
       sliderIndicator(id){
           this.selectedIndex = id;
 
-      },
-      testmove(text){
-        this.$router.push({
-            name:"test",
-            query:{
-                testid:text
-            } }
-        )   
       }
 }
 }
 </script>
 <style >
 /* font */
-@import url('http://fonts.cdnfonts.com/css/trajan-pro');
 /* colors */
 :root {
     --url-text-color:#ffffff;

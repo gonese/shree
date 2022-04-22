@@ -21,7 +21,6 @@ export default {
 <style scoped>
 .container{
     height: fit-content;
-    min-height: 100vh;
     width:1000px;
     margin-left:auto;
     margin-right: auto;

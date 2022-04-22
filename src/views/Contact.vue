@@ -9,11 +9,11 @@
           New York, NY 10027</p>
           <p>Office: 621 Schapiro Building <br>
             Email: <a href="mailto:nayar@cs.columbia.edu ">nayar@cs.columbia.edu </a><br>
-            Phone: (212) 939-7092 <br>
+            Phone: (212) 853-8458 <br>
             Fax: (212) 939-7172 </p>
           <p>Administrative Assistant: <br>
           Anne Fleming <br>
-          Phone: (212) 939 7075 <br>
+          Phone: (212) 853 8423 <br>
           Email: <a href="mailto:fleming@cs.columbia.edu">fleming@cs.columbia.edu </a></p>
         </div>
 </template>
@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container{
     width:1000px;
     margin:auto;
@@ -32,5 +32,13 @@ export default {
     padding-top: 15px;
     padding-bottom:35px;
     display:block;
+
+}
+a{
+      color:black;
+    text-decoration: none;
+}
+a:hover{
+    color:rgba(103, 103, 104, 0.842)
 }
 </style>

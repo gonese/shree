@@ -39,5 +39,12 @@ export default {
     margin-right: auto;
     display:block;
 }
+.list-element{
+    color:black;
+    text-decoration: none;
+}
+.list-element:hover{
+    color:rgba(103, 103, 104, 0.842)
+}
 
 </style>

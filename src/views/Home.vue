@@ -8,18 +8,17 @@
             the development of algorithms for understanding scenes from images. His work is motivated by
             applications in the fields of imaging, computer vision, robotics, virtual reality, augmented reality,
             visual communication, computer graphics and human-computer interfaces.</p>
-            <ul class="list-index">
-                    <p class=title>Research: </p>
-                <li><a href="https://www.cs.columbia.edu/CAVE/" class="list-element">Columbia Imaging and Vision Laboratory(CAVE)</a></li>
-                <li><a href="https://www.cs.columbia.edu/CAVE/publications/" class="list-element">Publications</a></li>
+
+            <ul class="list-inline">
+                <li><router-link class=list-element to="/bio">Short Bio</router-link></li>
+                <li><router-link class=list-element2 to="/cv">Short CV</router-link></li>
             </ul>
             <ul class="list-index">
-                <p class=title>Education: </p>
-                <li><a href="https://fpcv.cs.columbia.edu/" class="list-element">Lecture Series: First Principles of Computer Vision</a></li>
+                <li><a href="https://fpcv.cs.columbia.edu/" class="list-element">Computer Vision Lectures</a></li>
                 <li><a href="http://www.bigshotcamera.com/" class="list-element">Bigshot: Digital Camera for Experiential Learning</a></li>
             </ul>
             </div>
-            <img class=image src="http://www.cs.columbia.edu/~nayar/assets/shree.jpg">
+            <img class=image :src="require('../assets/shree.jpg')">
 </div>
 </template>
 
@@ -29,12 +28,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container{
-    width:1200px;
-    margin:auto;
+    width:fit-content;
+    margin:0 auto;
     height:fit-content;
-    align-content: center;
+    min-height: 100vh;
+    /* align-content: center; */
     padding-top: 3%;
     padding-bottom:1%;
     display:flex;
@@ -56,6 +56,7 @@ export default {
     margin:0;
 }
 .list-index{
+    margin:0;
     list-style: none;
     padding:0;
 
@@ -65,11 +66,28 @@ export default {
     font-weight: bold;
 }
 .list-element{
-    color:black;
+    color:rgb(72, 139, 227);
     text-decoration: none;
+    font-size:20px;
     
 }
-.list-element:hover{
+.list-element:hover, .list-element2:hover{
     color:rgba(103, 103, 104, 0.842)
+}
+.list-element2{
+    color:rgb(72, 139, 227);
+    text-decoration: none;
+    font-size:20px;
+    padding-left:20px;
+    
+}
+
+.list-inline{
+    list-style: none;
+    color:black;
+    display: flex;
+    padding:0;
+    width:250px;
+    margin-bottom:0;
 }
 </style>

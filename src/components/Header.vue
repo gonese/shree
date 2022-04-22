@@ -1,7 +1,6 @@
 <template>
     <div class=head>
         <div class=wrapper>
-                    <img class=logo :src="require('../assets/logo.png')"/>
                     <router-link class=title :to="'/'" >Shree K. Nayar</router-link>
                     <Navigation class=nav /> 
         </div>
@@ -22,7 +21,7 @@ export default {
         background-color: rgb(0, 0, 0);
         height:100px;
         text-align: left;
-        min-width:1600px;
+        min-width:1650px;
         position: relative;
     }
     .wrapper{

@@ -1,5 +1,5 @@
 <template>
-  <div id=app> 
+  <div>
   <Header/>
   <router-view class=content>
 
@@ -26,8 +26,8 @@ export default {
 body,html,#app{
     margin:0;
     padding:0;
-    min-height:100%;
-    width:1600px;
+    min-height:100vh;
+    width:100%;
 
 }
 
@@ -36,7 +36,8 @@ body,html,#app{
   font-size:18px;
   width:1600px;
   line-height: 1.6em;
-  height: 100vh;
-
+  min-height: 100vh;
+  height:fit-content;
+  margin:auto;
 }
 </style>
