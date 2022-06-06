@@ -26,12 +26,13 @@ export default {
 
 <style scoped>
 .container{
-    width:1000px;
+    width:100%;
+    max-width:1000px;
     margin:auto;
     align-content: center;
-    padding-top: 15px;
     padding-bottom:35px;
     display:block;
+    padding-top:16px;
 
 }
 a{
@@ -40,5 +41,11 @@ a{
 }
 a:hover{
     color:rgba(103, 103, 104, 0.842)
+}
+h2{
+    font-family: "Raleway";
+    font-weight: 600;
+    margin-top:32px;
+    margin-bottom:32px;
 }
 </style>

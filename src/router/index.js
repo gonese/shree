@@ -1,5 +1,5 @@
 
-import {createRouter,createWebHashHistory} from 'vue-router'
+import {createRouter,createWebHistory} from 'vue-router'
 const routes = [
     {
         path:"/",
@@ -18,6 +18,7 @@ const routes = [
         component:()=>import("../views/Contact")
     },
     {
+        // path:"press",
         path:"/press",
         component:()=>import("../views/Press.vue")
     }
@@ -25,7 +26,7 @@ const routes = [
 
 const router = createRouter(
     {
-        history:createWebHashHistory(),
+        history:createWebHistory('/~nayar/'),
         scrollBehavior(){
             return{top:0}
         },

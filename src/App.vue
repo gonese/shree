@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class=w>
   <Header/>
   <router-view class=content>
 
@@ -21,13 +21,14 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700');
 
 body,html,#app{
     margin:0;
     padding:0;
     min-height:100vh;
-    width:100%;
+    min-width: 100%;
+    width:fit-content;
 
 }
 
@@ -36,8 +37,21 @@ body,html,#app{
   font-size:18px;
   width:1600px;
   line-height: 1.6em;
-  min-height: 100vh;
+  min-height: 90vh;
   height:fit-content;
   margin:auto;
+}
+@media (max-width:1000px) {
+  .content{
+  width:100vh;
+  line-height: 1.6em;
+  min-height: 90vh;
+  height:fit-content;
+  margin:auto;
+}
+.w{
+  width: 100%;
+}
+  
 }
 </style>
